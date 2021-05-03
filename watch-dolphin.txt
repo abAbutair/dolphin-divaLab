@@ -1,1 +1,0 @@
-sass --watch D:\work\diva\dolphin\dolphin-static\scss\imports.scss:D:\work\diva\dolphin\dolphin-static\css\style-en.css --source-map
