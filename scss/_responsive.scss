@@ -1,0 +1,559 @@
+//---------------special-container---------------
+@media (min-width: 1366px){
+  .container{
+    max-width: 1200px;
+  }
+}
+
+@media (min-width: 1550px){
+  .container{
+    max-width: 1400px;
+  }
+}
+
+//---------------------(1366)---------------------
+@media only screen and (max-width:1366px) {
+  .btn{
+    font-size: 14px;
+    width: 125px;
+    height: 35px;
+  }
+  .social-list ul li a i{
+    font-size: 18px;
+  }
+  .read-link{
+    a{
+      font-size: 14px;
+    }
+  }
+  //---------------header---------------
+  header .navbar .navbar-collapse .navbar-nav .nav-item .nav-link{
+    font-size: 16px;
+  }
+  //---------------slider---------------
+  main .slider .carousel .carousel-inner .carousel-item{
+    min-height: 450px;
+    height: 450px;
+  }
+  main .slider .carousel .carousel-inner .carousel-item .carousel-caption h5{
+    font-size: 40px;
+  }
+  main .slider .carousel .carousel-indicators, main .slider .carousel .carousel-inner .carousel-item .carousel-caption{
+    margin-right: 7%;
+    margin-left: 7%;
+  }
+  //---------------who-are-we-------------
+  .section-header h1{
+    font-size: 55px;
+  }
+  main .who-we-are .section-dolphin{
+    padding: 90px;
+    article{
+      font-size: 14px;
+      span{
+        font-size: 30px;
+      }
+    }
+  }
+  main .coaching-experience .coaching-experience-inner {
+    h2{
+      font-size: 30px;
+    }
+    article{
+      font-size: 14px;
+    }
+  }
+  //---------------Dolphin-Academy-------------
+  main .dolphin-academy .section-header article{
+    font-size: 14px;
+  }
+  main .programs-offers .programs-index{
+    min-height: 300px;
+    h3{
+      font-size: 24px;
+    }
+  }
+  main .our-blog .blog-index .blog-details{
+    max-height: 90%;
+    h4{
+      font-size: 18px;
+    }
+    p{
+      font-size: 12px;
+    }
+  }
+
+  footer .footer-top .map-holder{
+    height: 350px;
+  }
+  footer .footer-end .footer-block{
+    margin-bottom: 20px;
+    label{
+      font-size: 18px;
+    }
+    p{
+      font-size: 14px;
+    }
+  }
+  footer .footer-end .footer-block form input{
+    &::placeholder{
+      font-size: 12px;
+    }
+  }
+  footer .footer-end .all-rights{
+    font-size: 11px;
+  }
+}
+
+//---------------------(1200)---------------------
+@media only screen and (max-width:1200px){
+  main .slider .carousel .carousel-indicators, main .slider .carousel .carousel-inner .carousel-item .carousel-caption{
+    margin-right: 4%;
+    margin-left: 4%;
+  }
+  .search-btn .searchbox{
+    right: -20px;
+  }
+    main .blogs .row-wrapper .blog .data-wrapper .text .read-more{
+        text-align: $left!important;
+    }
+    .blogs .data-wrapper .text{
+        padding-#{$right}: 15px;
+        padding-#{$left}: 0;
+        padding-top: 15px;
+    }
+    
+}
+//---------------------(992)---------------------
+@media only screen and (max-width:992px){
+  header .navbar .navbar-collapse{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    //left: 0;
+    right: -100%;
+    background: #fff;
+    width: 0;
+    height: 100%;
+    z-index: 111111111111111111111111111111111111;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 23px 0 29px 30px rgba(254,99,101, 0.1);
+    transition: 1s;
+    .closebtn{
+      font-size: 100px;
+      color: #FE6365;
+      height: 70px;
+      width: 60px;
+      display: flex;
+      line-height: 30px;
+      position: absolute;
+      align-items: center;
+      justify-content: center;
+      top: 8px;
+      left: 5%;
+      text-decoration: none;
+      &:hover{
+        &:before{
+          content: 'close';
+          display: block;
+          color: #FE6365;
+          font-size: 20px;
+          position: absolute;
+          bottom: -30px;
+          text-transform: capitalize;
+          font-weight: bold;
+        }
+      }
+    }
+    .navbar-nav{
+      width: 100%;
+      align-items: center;
+      overflow-y: scroll;
+      max-height: 100%;
+    }
+  }
+  header .navbar .navbar-toggler .navbar-toggler-icon{
+    height: 100%;
+    span{
+      height: 2px;
+      width: 100%;
+      background: #fe6361;
+      display: block;
+      &:not(:last-child){
+        margin-bottom: 7px;
+      }
+    }
+  }
+  header .navbar .navbar-collapse .navbar-nav .nav-item .nav-link{
+    margin-right: 0;
+    margin-bottom: 30px;
+    font-size: 24px;
+  }
+  header .navbar .navbar-collapse .navbar-nav .nav-item.active .nav-link{
+    position: relative;
+    &:before{
+      content: '';
+      width: 100px;
+      height: 1px;
+      background-color: #fe6361;
+      display: block;
+      top: 50%;
+      transform: translateY(-50%);
+      position: absolute;
+      left: -130px;
+    }
+  }
+  header .dropdown-menu{
+    position: absolute!important;
+    left: 0;
+    top: 65%;
+  }
+  .social-list{
+    display: none;
+  }
+    main .slider .bread{
+        width: 100%;
+    }
+  footer .footer-end .social-list-res{
+    display: flex;
+    background: transparent;
+    width: 100%;
+    margin: 20px 0;
+    ul{
+      display: flex;
+      li{
+        margin-right: 40px;
+        margin-bottom: 0;
+        &:last-child{
+          margin-right: 0;
+        }
+        a{
+          i{
+            color: #fff;
+            font-size: 22px;
+          }
+        }
+      }
+    }
+  }
+  main .slider .carousel{
+    width: 100%;
+  }
+  main .slider .carousel .carousel-indicators, main .slider .carousel .carousel-inner .carousel-item .carousel-caption{
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  main .slider .carousel .carousel-inner .carousel-item .carousel-caption {
+    position: static;
+    h5{
+      text-align: center;
+    }
+  }
+  main .slider .carousel .carousel-inner .carousel-item{
+    min-height: 400px;
+    height: 400px;
+  }
+  //----------------after-the-slider------------------
+  main .who-we-are{
+    margin: 0;
+  }
+  .section-header h1{
+    font-size: 50px;
+  }
+  main .who-we-are .section-dolphin{
+    background-color: transparent;
+    padding: 70px 40px;
+  }
+  main .dolphin-academy .section-header{
+    padding: 0 0 0 15px;
+  }
+  main .coaching-experience .coaching-experience-inner .num-order{
+    max-height: 80px;
+    p{
+      font-size: 200px;
+    }
+  }
+  main .coaching-experience .coaching-experience-inner h2{
+    font-size: 22px;
+  }
+  //----------------footer------------------
+  footer .footer-end{
+    margin-top: 0;
+    background: #333;
+  }
+  footer .footer-end .all-rights{
+    width: 100%;
+  }
+  .search-btn .searchbox{
+    top: 20px;
+    right: 4%;
+    transform: unset;
+  }
+  .search-btn .searchbox-open{
+    width: 46%;
+  }
+    
+    main .blog-details .text-shape{
+        margin: 0;
+        padding: 30px 15px;
+    }
+    .blogs .blog .row{
+        align-items: end!important;
+    }
+    main .who-we .ttle{
+        font-size: 15px;
+    }
+     main .who-we .text p{
+        font-size: 14px;
+    }
+    main .blogs .row-wrapper .blog .data-wrapper .img img{
+        transform: scale(1, 1);
+    }
+    main .blogs .row-wrapper{
+        margin-bottom: 40px;
+    }
+    header .navbar .navbar-collapse .navbar-nav .nav-item .nav-link{
+        font-size: 18px;
+    }
+}
+
+//---------------------(768)---------------------
+@media only screen and (max-width:768px){
+  header .container{
+    max-width: 100%;
+  }
+  .section-header h1{
+    padding-top: 30px;
+    span{
+      display: unset;
+    }
+  }
+  main{
+    .who-we-are{
+      background: #ecf9fd;
+      .section-dolphin{
+        padding: 40px 0;
+      }
+    }
+    .dolphin-academy{
+      background-position: center;
+      background-size: 100%;
+      position: relative;
+      &:before{
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.8);
+      }
+      .section-header{
+        padding: 0;
+        padding-bottom: 70px;
+        h1{
+          padding: 30px 0;
+          text-align: center;
+        }
+        article{
+          padding-bottom: 30px;
+          padding-top: 15px;
+          text-align: center;
+        }
+        .read-link{
+          justify-content: center;
+        }
+      }
+    }
+    .programs-offers .programs-index{
+      min-height: auto;
+      h3{
+        margin: 45px 0 45px;
+        position: static;
+        transform: translate(0);
+        width: 90%;
+      }
+    }
+    .our-blog{
+      .row-mr{
+        &:not(:nth-child(-n+2)){
+          display: none;
+        }
+      }
+    }
+    .slider .carousel .carousel-inner .carousel-item{
+      min-height: 320px;
+      height: 320px;
+    }
+    .slider .carousel .carousel-indicators{
+      bottom: 0;
+      li{
+        width: 55px;
+      }
+    }
+    .blog-details2 .new-row .img-wrapper{
+      text-align: center;
+      margin-bottom: 20px;
+      margin-top: 20px;
+    }
+    .blogs .row-wrapper .blog .data-wrapper .img{
+      text-align: center;
+    }
+    .blogs .row-wrapper .blog .data-wrapper {
+      margin-bottom: 20px;
+    }
+    .blogs .row-wrapper{
+      margin-bottom: 0;
+    }
+    .swimming .myrow .wrapper{
+      margin-bottom: 0;
+      .text{
+        margin-bottom: 20px;
+      }
+    }
+    .achievments .text-shape .timeline-right:before,
+    .achievments .text-shape .timeline-left:before,
+    .achievments .text-shape:before,
+    .achievments .text-shape .timeline-right .date:before,
+    .achievments .text-shape .timeline-left .date:before{
+      display: none;
+    }
+    .achievments .text-shape{
+      .timeline-right, .timeline-left{
+        margin: 20px;
+      }
+      .remv-padding {
+        padding: 0;
+      }
+    }
+  }
+  .bg-white-sp{
+    background-color: transparent;
+  }
+  .navbar-brand{
+    img{
+      width: 80%;
+    }
+  }
+  .search-btn .searchbox-open{
+    width: 92%;
+  }
+    .blogs .data-wrapper .text{
+        padding-#{$left}: 30px;
+    }
+    header .navbar .navbar-collapse .navbar-nav .nav-item .nav-link{
+        font-size: 16px;
+    }
+
+}
+
+//---------------------(576)---------------------
+@media only screen and (max-width:576px){
+  .search-box:hover .s-box{
+    width: 200px;
+  }
+  //header .navbar .navbar-collapse .navbar-nav .nav-item{
+  //  display: flex;
+  //  justify-content: center;
+  //}
+  header .navbar .navbar-collapse .navbar-nav .nav-item.active .nav-link{
+    &:before{
+      top: unset;
+      transform: unset;
+      bottom: 0;
+      width: 100%;
+      left: 0;
+    }
+  }
+  .section-header h1{
+    font-size: 28px;
+  }
+  main .slider .carousel .carousel-inner .carousel-item{
+    min-height: 250px;
+    height: 250px;
+  }
+  .navbar-brand{
+    img{
+      width: 65%;
+    }
+  }
+  main .slider .carousel .carousel-inner .carousel-item .carousel-caption h5{
+    font-size: 28px;
+  }
+  main .slider .carousel .carousel-inner .carousel-item .carousel-caption h5 .sp-word{
+    font-size: 30px;
+  }
+  .read-link:after{
+    width: 60px;
+  }
+  .read-link{
+    float: none!important;
+    justify-content: center;
+    &:first-child{
+      margin-bottom: 10px;
+    }
+  }
+  main .coaching-experience .coaching-experience-inner{
+    margin: 30px 0;
+  }
+  main .programs-offers .programs-index h3{
+    margin: 30px 0 30px;
+    font-size: 22px;
+  }
+  header .navbar .navbar-collapse .closebtn{
+    font-size: 60px;
+  }
+    .achievments .timeline-disc{
+        font-size: 14px;
+    }
+}
+//---------------------(480)---------------------
+@media only screen and (max-width:480px) {
+  main .our-blog .row-mr{
+    height: 100%;
+  }
+  main .our-blog .blog-index{
+    display: block;
+    max-height: unset;
+    margin-bottom: 0;
+    .blog-img{
+      width: 100%;
+      float: unset;
+      display: block;
+      min-height: 150px;
+      max-height: 150px;
+    }
+    .blog-details{
+      float: unset;
+      width: 100%;
+      max-height: unset;
+    }
+  }
+}
+
+//---------------------(420)---------------------
+@media only screen and (max-width:420px) {
+  main .dolphin-academy .section-header h1{
+    padding: 15px 0;
+  }
+  main .dolphin-academy .section-header{
+    padding-bottom: 40px;
+  }
+  main .slider .carousel .carousel-inner .carousel-item .carousel-caption h5{
+    font-size: 22px;
+  }
+  main .slider .carousel .carousel-inner .carousel-item .carousel-caption h5 .sp-word{
+    font-size: 24px;
+  }
+}
+//---------------------(max height 700)---------------------
+@media only screen and (max-height:700px){
+  header .navbar .navbar-collapse{
+    .navbar-nav{
+    }
+  }
+}

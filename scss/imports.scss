@@ -1,0 +1,19 @@
+@import "variables";
+@import "mixins";
+@import "general";
+@import "header-footer";
+@import "main";
+@import "responsive";
+
+
+/////-----------------fonts-------------
+
+@font-face {
+  font-family: "sourceSanPro";
+  src: url("../webfonts/SourceSansPro-Regular.ttf"),
+       url("../webfonts/SourceSansPro-Regular.otf");
+}
+@font-face {
+  font-family: "sourceSanProBold";
+  src: url("../webfonts/SourceSansPro-Bold.ttf");
+}

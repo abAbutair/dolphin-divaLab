@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/style-en.css">
+    <script src="http://maps.googleapis.com/maps/api/js"></script>
+    <title>Dolphin</title>
+</head>
+<body>
+<header>
+    <div class="container">
+        <nav class="navbar navbar-expand-lg">
+            <a class="navbar-brand" href="#">
+                <img src="img/logo.png" alt="logo">
+            </a>
+            <button class="navbar-toggler" id="scriptThing" type="button"  onclick="openNav()">
+                <span class="navbar-toggler-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#" data-wow-duration="1s">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLinkZero" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">program</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">offers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"  href="#footer">contact us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLinkOne" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            language
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="#">English</a>
+                            <a class="dropdown-item" href="#">Arabic</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <!--<div class="search-box">-->
+                            <!--<input class="s-box" type="text" name="search" placeholder="search here">-->
+                            <!--<a class="s-btn" href="">-->
+                                <!--<i class="fas fa-search"></i>-->
+                            <!--</a>-->
+                        <!--</div>-->
+                        <div class="search-btn"><!--start of search-->
+                            <form class="searchbox">
+                                <input type="search" placeholder="Search here" name="search" onkeyup="buttonUp()" class="form-search">
+                                <button type="submit" class="btn-search fa fa-search"></button>
+                                <button type="button" class="icon-search fa fa-search"></button>
+                            </form>
+                        </div><!--end of of search-->
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</header>
+<main>
+    <!--slider-->
+    <div class="slider">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active" style="background-image: url('img/slider-1.jpg')">
+                    <div class="carousel-caption wow fadeIn d-none d-md-block" data-wow-duration="2s">
+                        <h5>
+                            <span class="d-block">A World Class Multi Purpose</span>
+                            <span class="d-block">Sports Academy in <span class="sp-word">UAE</span></span>
+                        </h5>
+                    </div>
+                </div>
+                <div class="carousel-item" style="background-image: url('img/programs-1.jpg')">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 class="line-1 anim-typewriter">
+                            <span class="d-block">A World Class Multi Purpose</span>
+                            <span class="d-block">Sports Academy in <span class="sp-word">UAE</span></span>
+                        </h5>
+                    </div>
+                </div>
+                <div class="carousel-item" style="background-image: url('img/programs-6.jpg')">
+                    <div class="carousel-caption wow pulse d-none d-md-block" data-wow-duration="2s">
+                        <h5>
+                            <span class="d-block">A World Class Multi Purpose</span>
+                            <span class="d-block">Sports Academy in <span class="sp-word">UAE</span></span>
+                        </h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="social-list">
+            <ul>
+                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+            </ul>
+        </div>
+    </div>    <!--End-of-slider-->
+
+
+    <!--who-we-are-->
+    <section class="who-we-are">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 align-items-center d-flex justify-content-center justify-content-md-start">
+                    <div class="section-header wow fadeInLeft">
+                        <h1><span>who</span> we are</h1>
+                    </div>
+                </div>
+                <div class="col-md-8 align-items-center d-flex">
+                    <div class="section-dolphin wow fadeIn"  data-wow-duration="1.5s">
+                        <article><span>Dolphin</span> Sports Academy was established in 2006 in United Arab Emirates with 5 branches among Abu Dhabi, Dubai and Ajman. Our Academy started with swimming lessons and trained +500 swimming athletes and hundreds of happy customers. They started participating in number of competitions since 2009 and won the golden medal in a lot of them. Dolphin Sports Academy is well known by its swimmers nationally and internationally.</article>
+                        <div class="links-float clearfix">
+                            <div class="read-link float-left">
+                                <a href="#">Read more</a>
+                            </div>
+                            <div class="read-link float-right">
+                                <a href="#">contact us</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--dolphin-academy-->
+    <section class="dolphin-academy" style="background-image: url('img/Untitled-6.jpg')">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                </div>
+                <div class="col-md-6 bg-white-sp">
+                    <div class="section-header wow fadeInRight">
+                        <h1><span>why</span> <span>dolphin</span> academy</h1>
+                        <article>To produce world class athletes, it very important to provide a world class sports training facility in Abu Dhabi to realise the true potential of each individual and encourage them to get out </article>
+                        <div class="read-link">
+                            <a href="#">Read more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--coaching-experience-->
+    <section class="coaching-experience">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="coaching-experience-inner wow fadeInUp" data-wow-duration="1.3s">
+                        <div class="num-order">
+                            <p>01</p>
+                        </div>
+                        <h2 class="text-capitalize">coaching experience</h2>
+                        <article>With over 10 years of experience, offering a wide range of sports training to choose from, we are sure to provide you with the most professional and best sports coaching class in UAE.</article>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="coaching-experience-inner wow fadeInUp" data-wow-duration="2.3s">
+                        <div class="num-order">
+                            <p>02</p>
+                        </div>
+                        <h2 class="text-capitalize">Passionate Trainers</h2>
+                        <article>We started with only 40+ athletes and now we are 500+ athletes in different games across all UAE. That didn't happen just by luck, the dedication and commitment of our champioN</article>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="coaching-experience-inner wow fadeInUp" data-wow-duration="3.3s">
+                        <div class="num-order">
+                            <p>03</p>
+                        </div>
+                        <h2 class="text-capitalize">World Class Facility</h2>
+                        <article>To produce world class athletes, it very important to provide a world class sports training facility in Abu Dhabi to realise the true potential of each individual and encourage them to get out</article>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--programs-offers-->
+    <section class="programs-offers">
+        <div class="container">
+            <div class="section-header">
+                <h1>programs offers</h1>
+            </div>
+
+            <!--images minimum 470px * 350px-->
+            <div class="row">
+                <div class="col-lg-4 col-md-6 row-mr">
+                    <a href="#" class="programs-index wow fadeInLeft" style="background-image: url('img/programs-1.jpg')" data-wow-duration="1s">
+                        <h3 class="h3-color">swimming lessons</h3>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6 row-mr">
+                    <a href="#" class="programs-index wow fadeInDown" style="background-image: url('img/programs-2.jpg')" data-wow-duration="1.5s">
+                        <h3 class="h3-color">football lessons</h3>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6 row-mr">
+                    <a href="#" class="programs-index wow fadeInRight" style="background-image: url('img/programs-3.jpg')" data-wow-duration="1.1s">
+                        <h3 class="h3-color">ballet lessons</h3>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6 row-mr">
+                    <a href="#" class="programs-index wow fadeInLeft" style="background-image: url('img/programs-4.jpg')" data-wow-duration="1.6s">
+                        <h3 class="h3-color">karate lessons</h3>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6 row-mr">
+                    <a href="#" class="programs-index wow fadeInUp" style="background-image: url('img/programs-5.jpg')" data-wow-duration="1.5s">
+                        <h3 class="h3-color">gymnastic lessons</h3>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6 row-mr">
+                    <a href="#" class="programs-index wow fadeInRight" style="background-image: url('img/programs-6.jpg')" data-wow-duration="1.7s">
+                        <h3 class="h3-color">bascketball lessons</h3>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--our-blog-->
+    <section class="our-blog">
+        <div class="container">
+            <div class="section-header">
+                <h1>our blog</h1>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 row-mr">
+                    <div class="blog-index wow fadeInRight" data-wow-duration="1.5s">
+                        <div class="blog-img" style="background-image: url('img/blog-1.jpg')"></div>
+                        <div class="blog-details">
+                            <h4>How to Choose the Best Goggles for</h4>
+                            <p class="blog-date"><span>04/Dec/2017</span></p>
+                            <p class="blog-things">Swimming is one of the best forms of exercises as it certainly provides with total body workout.</p>
+                            <div class="read-link">
+                                <a href="#">Read more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 row-mr">
+                    <div class="blog-index wow fadeInRight" data-wow-duration="1.8s">
+                        <div class="blog-img" style="background-image: url('img/blog-1.jpg')"></div>
+                        <div class="blog-details">
+                            <h4>How to Choose the Best Goggles for</h4>
+                            <p class="blog-date"><span>04/Dec/2017</span></p>
+                            <p class="blog-things">Swimming is one of the best forms of exercises as it certainly provides with total body workout.</p>
+                            <div class="read-link">
+                                <a href="#">Read more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 row-mr">
+                    <div class="blog-index wow fadeInRight" data-wow-duration="2.1s">
+                        <div class="blog-img" style="background-image: url('img/blog-1.jpg')"></div>
+                        <div class="blog-details">
+                            <h4>How to Choose the Best Goggles for</h4>
+                            <p class="blog-date"><span>04/Dec/2017</span></p>
+                            <p class="blog-things">Swimming is one of the best forms of exercises as it certainly provides with total body workout.</p>
+                            <div class="read-link">
+                                <a href="#">Read more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 row-mr">
+                    <div class="blog-index wow fadeInRight" data-wow-duration="2.4s">
+                        <div class="blog-img" style="background-image: url('img/blog-1.jpg')"></div>
+                        <div class="blog-details">
+                            <h4>How to Choose the Best Goggles for</h4>
+                            <p class="blog-date"><span>04/Dec/2017</span></p>
+                            <p class="blog-things">Swimming is one of the best forms of exercises as it certainly provides with total body workout.</p>
+                            <div class="read-link">
+                                <a href="#">Read more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--footer-->
+    <footer id="footer">
+        <div class="footer-top">
+            <div class="map-holder">
+                <div id="map-container" class="map"></div>
+            </div>
+            <div class="social-list">
+                <ul>
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-end">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-sm-6 offset-lg-2 mb-4 mb-sm-0">
+                        <div class="footer-block wow fadeIn" data-wow-duration="1.4s">
+                            <label class="text-transform">address</label>
+                            <p>International Community School - Al Mushrif - Abu Dhabi - United Arab Emirates</p>
+                        </div>
+                        <div class="footer-block wow fadeIn" data-wow-duration="1.8s">
+                            <label class="text-transform">phone</label>
+                            <p>‎+97122356197</p>
+                        </div>
+                        <div class="footer-block wow fadeIn" data-wow-duration="2.2s">
+                            <label class="text-transform">address</label>
+                            <p>info@dolphin-swimming.com</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 col-sm-6 offset-lg-1">
+                        <div class="footer-block wow fadeIn" data-wow-duration="2.6s">
+                            <label class="text-transform">get in touch</label>
+                            <p>Please send us a message and we will be glad to help!</p>
+                        </div>
+                        <div class="footer-block wow fadeIn" data-wow-duration="3s">
+                            <form>
+                                <input type="text" placeholder="name">
+                                <input type="email" placeholder="e-mail">
+                                <textarea name="message" placeholder="message"></textarea>
+                                <button type="submit" class="btn text-transform">subscribe</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="social-list social-list-res">
+                            <ul>
+                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <p class="all-rights">Dolphin Sports Academy. All Rights Reserved.Powered by <a href="http://www.diva-lab.com/">Diva-lab</a> 2018©</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</main>
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+<!--<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>-->
+<script src="js/bootstrap.min.js"></script>
+
+<script src="js/wow.min.js"></script>
+<!-- WOW.JS -->
+<script>
+    new WOW().init();
+</script>
+
+<script src="js/scripts.js"></script>
+
+</body>
+</html>
